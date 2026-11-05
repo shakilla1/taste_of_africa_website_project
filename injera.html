@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Injera | Tastes of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Tastes of Africa</a>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="west-africa.html">West Africa</a>
+      <a href="east-africa.html">East Africa</a>
+      <a href="north-africa.html">North Africa</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button id="theme-toggle" type="button">Dark mode</button>
+    </nav>
+  </header>
+  <main>
+    <article class="recipe">
+      <h1>Injera</h1>
+      <img class="recipe-img" src="images/injera.jpg" alt="Injera served with lentil, collard greens and spicy stews, with a hand tearing off a piece">
+      <p>Injera is the spongy sourdough flatbread at the center of every Ethiopian meal. It is made from <mark>teff</mark>, a tiny ancient grain, fermented for a few days until it turns tangy and bubbly. People tear off pieces and use them to scoop up stews, so it works as both plate and spoon.The first batch takes about nine days because of the starter, but you can reuse the starter for later batches.</p>
+      <button class="fav" type="button" data-id="injera">&hearts; Favorite</button>
+
+      <section>
+        <h2>Ingredients</h2>
+        <label for="servings">Servings</label>
+        <input type="number" id="servings" value="4" min="1" max="20" data-base="4">
+        <ul class="ingredients">
+        <li><strong>Starter (made once):</strong> 2 cups sifted teff flour, 1 teaspoon active dry yeast and 1.5 liters warm water</li>
+        <li><span class="amount" data-base="2">2</span> cups teff flour, for the batter</li>
+        <li><span class="amount" data-base="1">1</span> teaspoon fenugreek powder (optional)</li>
+        <li><span class="amount" data-base="1.7">1.7</span> liters warm water, about 40 °C (104 °F)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Cooking instructions</h2>
+        <details>
+          <summary>Show the steps</summary>
+          <ol>
+          <li>Make the starter: mix the teff flour, yeast and warm water, and leave it in a warm spot for 3 days.</li>
+          <li>Drain off the liquid on top, add about 500 to 600 ml of cold water, and change the water every day for 6 days. Save some of the starter for next time, so you only do this once.</li>
+          <li>For the batter, blend or mix the teff flour, fenugreek and warm water until smooth.</li>
+          <li>Cover the batter and leave it overnight.</li>
+          <li>The next morning, drain off the liquid on top but keep it. Stir most of it back in to adjust the batter to a thin, pourable texture.</li>
+          <li>Heat a non-stick pan. Pour in the batter, swirl it to cover the base, then cover and cook until holes appear and the top looks dry. Do not flip it.</li>
+          <li>Slide the injera onto a clean cloth and let it cool before stacking.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section>
+        <h2>Watch how it is made</h2>
+        <div class="video">
+      <iframe src="https://www.youtube.com/embed/2oRDGbJtNJA" title="How to make injera from scratch" loading="lazy" allowfullscreen></iframe>
+    </div>
+      </section>
+
+      <section>
+        <h2>Nutrition (approximate, per serving)</h2>
+        <table>
+          <tbody>
+        <tr><th scope="row">Calories</th><td>253</td></tr>
+        <tr><th scope="row">Carbohydrates</th><td>53 g</td></tr>
+        <tr><th scope="row">Protein</th><td>8 g</td></tr>
+        <tr><th scope="row">Fat</th><td>2 g</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Where it comes from: Ethiopia</h2>
+        <div class="map">
+      <iframe src="https://www.google.com/maps?q=Addis+Ababa,+Ethiopia&output=embed" title="Map of Ethiopia" loading="lazy"></iframe>
+    </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>Tastes of Africa. Celebrating African food heritage.</p>
+    <form id="newsletter-form">
+      <label for="newsletter-email">Get new recipes by email</label>
+      <div class="inline">
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

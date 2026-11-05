@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isombe | Tastes of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Tastes of Africa</a>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="west-africa.html">West Africa</a>
+      <a href="east-africa.html">East Africa</a>
+      <a href="north-africa.html">North Africa</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button id="theme-toggle" type="button">Dark mode</button>
+    </nav>
+  </header>
+  <main>
+    <article class="recipe">
+      <h1>Isombe</h1>
+      <img class="recipe-img" src="images/isombe.jpg" alt="Cooked cassava leaf stew served over white rice with a yellow pepper on top">
+      <p>Isombe is a Rwandan favorite made from pounded <mark>cassava leaves</mark> cooked slowly until soft and creamy. Ground peanuts and palm oil give it a rich, earthy taste. It is often served with rice, plantains or boiled potatoes at family meals and celebrations.</p>
+      <button class="fav" type="button" data-id="isombe">&hearts; Favorite</button>
+
+      <section>
+        <h2>Ingredients</h2>
+        <label for="servings">Servings</label>
+        <input type="number" id="servings" value="4" min="1" max="20" data-base="4">
+        <ul class="ingredients">
+        <li><span class="amount" data-base="500">500</span> g pounded cassava leaves</li>
+        <li><span class="amount" data-base="1">1</span> leek, ground with the leaves</li>
+        <li><span class="amount" data-base="1">1</span> green bell pepper, ground with the leaves</li>
+        <li><span class="amount" data-base="300">300</span> g beef, cut into pieces</li>
+        <li><span class="amount" data-base="1">1</span> cup beef stock</li>
+        <li><span class="amount" data-base="2">2</span> tablespoons palm oil</li>
+        <li><span class="amount" data-base="1">1</span> green seasoning cube</li>
+        <li><span class="amount" data-base="3">3</span> garlic cloves, freshly ground</li>
+        <li><span class="amount" data-base="3">3</span> tablespoons ground groundnuts (peanuts)</li>
+        <li>Salt, to taste</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Cooking instructions</h2>
+        <details>
+          <summary>Show the steps</summary>
+          <ol>
+          <li>Grind the cassava leaves, leek and green bell pepper together into a paste.</li>
+          <li>Roast the paste in a pan, stirring, until it turns from bright green to a deeper green and loses its bitter taste.</li>
+          <li>Add the beef and the stock, cover, and let it simmer until the liquid reduces. Stir often so the leaves do not burn at the bottom.</li>
+          <li>Stir in the palm oil and crumble in the seasoning cube.</li>
+          <li>Add the ground garlic. Rinse the mortar with a little water and pour it into the pot.</li>
+          <li>Add a little water and bring it back to a boil, then mix in the ground groundnuts.</li>
+          <li>Add salt to taste and simmer on low heat until the meat is very tender.</li>
+          <li>Serve hot with rice or ubugari, a stiff dough made from cassava flour. Isombe tastes even better when reheated the next day.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section>
+        <h2>Watch how it is made</h2>
+        <div class="video">
+      <iframe src="https://www.youtube.com/embed/eFt-j42yaRY" title="How to cook isombe" loading="lazy" allowfullscreen></iframe>
+    </div>
+      </section>
+
+      <section>
+        <h2>Nutrition (approximate, per serving)</h2>
+        <table>
+          <tbody>
+        <tr><th scope="row">Calories</th><td>395</td></tr>
+        <tr><th scope="row">Carbohydrates</th><td>29 g</td></tr>
+        <tr><th scope="row">Protein</th><td>26 g</td></tr>
+        <tr><th scope="row">Fat</th><td>22 g</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Where it comes from: Rwanda</h2>
+        <div class="map">
+      <iframe src="https://www.google.com/maps?q=Kigali,+Rwanda&output=embed" title="Map of Rwanda" loading="lazy"></iframe>
+    </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>Tastes of Africa. Celebrating African food heritage.</p>
+    <form id="newsletter-form">
+      <label for="newsletter-email">Get new recipes by email</label>
+      <div class="inline">
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
