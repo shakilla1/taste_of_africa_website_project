@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Tastes of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Tastes of Africa</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="west-africa.html">West Africa</a>
+      <a href="east-africa.html">East Africa</a>
+      <a href="north-africa.html">North Africa</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button id="theme-toggle" type="button">Dark mode</button>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Welcome to Tastes of Africa</h1>
+    <p>From smoky jollof to tangy injera, explore the dishes, spices and stories behind African cooking.</p>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/1zyDUkdVZ0E" title="An introduction to African food culture" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </section>
+  <main>
+    <section>
+      <h2>Featured dishes</h2>
+      <div class="cards">
+        <figure class="card">
+          <img src="images/jollof.jpg" alt="Jollof Rice">
+          <figcaption>
+            <h3>Jollof Rice</h3>
+            <p>Smoky one-pot rice cooked in a rich tomato and pepper base.</p>
+            <a href="jollof-rice.html">See the recipe</a>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <img src="images/injera.jpg" alt="Injera">
+          <figcaption>
+            <h3>Injera</h3>
+            <p>Soft, tangy flatbread made from fermented teff batter.</p>
+            <a href="injera.html">See the recipe</a>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <img src="images/isombe.jpg" alt="Isombe">
+          <figcaption>
+            <h3>Isombe</h3>
+            <p>Rwandan cassava leaves roasted, simmered with meat and finished with ground peanuts.</p>
+            <a href="isombe.html">See the recipe</a>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <img src="images/tagine.jpg" alt="Lamb Tagine">
+          <figcaption>
+            <h3>Lamb Tagine</h3>
+            Slow-cooked lamb with dried fruit, almonds and warm spices.
+            <a href="tagine.html">See the recipe</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Explore by region</h2>
+      <div class="cards">
+        <a class="region-link" href="west-africa.html"><h3>West Africa</h3><p>Rice, yams and bold pepper sauces.</p></a>
+        <a class="region-link" href="east-africa.html"><h3>East Africa</h3><p>Fermented breads, stews and cassava leaves.</p></a>
+        <a class="region-link" href="north-africa.html"><h3>North Africa</h3><p>Couscous, slow tagines and warm spices.</p></a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Latest food trends</h2>
+      <article class="trend">
+        <h3>Ancient grains are back</h3>
+        <p>Cooks everywhere are rediscovering <mark>teff</mark>, millet and fonio for their flavor and nutrition.</p>
+      </article>
+      <article class="trend">
+        <h3>Street food goes global</h3>
+        <p>Suya, mandazi and kachumbari are showing up on menus far from home as chefs bring <mark>West and East African</mark> flavors to new audiences.</p>
+      </article>
+      <article class="trend">
+        <h3>Plant-forward African cooking</h3>
+        <p>Dishes built on beans, greens and groundnuts, like isombe, are a natural fit for people eating less meat.</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Tastes of Africa. Celebrating African food heritage.</p>
+    <form id="newsletter-form">
+      <label for="newsletter-email">Get new recipes by email</label>
+      <div class="inline">
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
