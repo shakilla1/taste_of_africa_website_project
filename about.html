@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Tastes of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Tastes of Africa</a>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="west-africa.html">West Africa</a>
+      <a href="east-africa.html">East Africa</a>
+      <a href="north-africa.html">North Africa</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <button id="theme-toggle" type="button">Dark mode</button>
+    </nav>
+  </header>
+  <main>
+    <h1>About Us</h1>
+    <section class="mission">
+      <h2>Our mission</h2>
+      <p>We want more people to know, cook and enjoy African food. Tastes of Africa shares recipes, regional stories and
+        the cultural meaning behind each dish, so this food heritage stays alive for the next generation.</p>
+    </section>
+    <section>
+      <h2>A short history of African cuisine</h2>
+      <p>African cooking grew out of thousands of years of farming, trade and migration. Grains like sorghum, millet and
+        teff were grown here long before outside crops arrived. Trade routes across the Sahara and along the Indian
+        Ocean coast brought <mark>spices</mark> and new techniques, and later crops such as maize, cassava, tomatoes and
+        chili peppers became part of everyday meals.</p>
+      <p>African food also traveled with people. Ingredients like okra and black-eyed peas, and cooking ideas like
+        one-pot rice, shaped kitchens across the Caribbean and the Americas, and today African chefs are bringing their
+        own cuisines to restaurants around the world.</p>
+    </section>
+    <section>
+      <h2>A cultural food landmark</h2>
+      <p>Nyabugogo Vegetable Market in Kigali is where many families buy the fresh produce, cassava leaves, beans and
+        spices behind Rwandan home cooking.</p>
+      <figure>
+        <img src="images/nyabugogo.jpg"
+          alt="Shoppers and vendors at fruit and tomato stalls at Nyabugogo Market in Kigali">
+        <figcaption>Screenshot from a Nyabugogo Market tour video by
+          4K WALK LAGOS VIDEOS on YouTube</figcaption>
+      </figure>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=Nyabugogo+Vegetable+Market,+Kigali&output=embed"
+          title="Map of Nyabugogo Vegetable Market in Kigali" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Tastes of Africa. Celebrating African food heritage.</p>
+    <form id="newsletter-form">
+      <label for="newsletter-email">Get new recipes by email</label>
+      <div class="inline">
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
