@@ -80,7 +80,7 @@ if (contactForm) {
     const messageError = document.getElementById('message-error');
 
     nameError.textContent = name ? '' : 'Please enter your name.';
-    emailError.textContent = emailPattern.test(email) ? '' : 'Please enter a valid email, like name@example.com.';
+    emailError.textContent = emailPattern.test(email) ? '' : 'Please enter a valid email, like shakilla@gmail.com.';
     messageError.textContent = message.length > 20 ? '' : 'Your message needs to be more than 20 characters.';
 
     if (nameError.textContent || emailError.textContent || messageError.textContent) {
